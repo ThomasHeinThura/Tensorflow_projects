@@ -5,5 +5,5 @@
 *  If you make with tokenized layers, model cannot be saved with h5 format in tensorflow.  
 
 For beginner, 
-*  For who want to do further study, there are many transfer learning for . 
-*  For who want to train other dataset or test out, there are medical x-rays dataset, food vision dataset, objects vision dtasets. 
+*  For who want to do further study, there are many transfer learning for data embedding and text generating. 
+*  For who want to train other dataset or test out, there are scam detection, recommendtion, text to text translation. 
