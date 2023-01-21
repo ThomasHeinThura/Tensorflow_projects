@@ -2,7 +2,7 @@
 The model performance : 
 MSE : 0.000911
 MAE : 0.017075
-Time : 
+Time : 10min
 """
 
 import os
