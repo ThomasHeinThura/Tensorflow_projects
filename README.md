@@ -11,3 +11,4 @@
 * For those who want to make models. This is best practice to use `Jupyter notebook` at first. Because you can adjust and check for preparing data, input-output shape, and models. Stand-alone python files are for a direct run. 
 *  In some folders, there are readme files for showing results, difficulties, opinions, further study and future improvement. 
 * In some models, I train with functional API. 
+*  There is a small regression dataset. This can be compared with Time sere 
