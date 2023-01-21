@@ -1,7 +1,8 @@
 """
 The model performance : 
-MSE : 0.001413
-MAE : 0.02186
+MSE : 0.000911
+MAE : 0.017075
+Time : 
 """
 
 import os
@@ -16,6 +17,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import tensorflow as tf
+from datetime import datetime
 
 mpl.rcParams['figure.figsize'] = (8, 6)
 mpl.rcParams['axes.grid'] = False
@@ -123,8 +125,10 @@ residual_lstm = ResidualWrapper(
         kernel_initializer=tf.initializers.zeros())
 ]))
 
+start = datetime.now()
 history = compile_and_fit(residual_lstm, multi_window)
-
+end =  datetime.now()
+print (f"The time taken to train the model is : {end - start}")
 IPython.display.clear_output()
 val_performance['LSTM'] = residual_lstm.evaluate( multi_window.val)
 performance['LSTM'] = residual_lstm.evaluate( multi_window.test, verbose=0)
