@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import tensorflow as tf
 
-#Import Data
+# Import Data Main data from keggle and import data by pointing exact location or os.path.dirname(os.path.realpath('example-file/sign-mnist/sign_mnist_train.csv'))
 data_path = '/home/hanlinn/00.projects/tensorflow-prepare/example-file/sign-mnist/sign_mnist_train.csv'
 train_df = pd.read_csv(data_path)
 
