@@ -1,5 +1,5 @@
 """
-The model performance :  The gpu ram is not effient to train
+The model performance :  The 12gb of gpu ram is not effient to train
 val_accuary : ~75%+
 val_loss : ~0.77
 time : ~25min+
@@ -29,6 +29,7 @@ input_shape = (img_height,img_width, 3)
 num_classes = 5
 epoch = 50
 
+# Import Data Main data from keggle or from tensorflow dataset and import data.
 (train_ds, val_ds, test_ds), metadata = tfds.load(
     'tf_flowers',
     split=['train[:80%]', 'train[80%:90%]', 'train[90%:]'],

@@ -31,7 +31,7 @@ input_shape = (img_height,img_width, 3)
 num_classes = 5
 epoch = 50
 
-# Import Data
+# Import Data Main data from keggle or from tensorflow dataset and import data.
 flower_dir =  os.path.dirname(os.path.realpath('example-file/flower/flowers/*'))
 
 train_ds = tf.keras.utils.image_dataset_from_directory(
