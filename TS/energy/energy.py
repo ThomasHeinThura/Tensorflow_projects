@@ -20,6 +20,9 @@ import tensorflow as tf
 mpl.rcParams['figure.figsize'] = (8, 6)
 mpl.rcParams['axes.grid'] = False
 
+
+# Import Data Main data from keggle and tensorflow dataset
+# import data by pointing exact location or os.path.dirname(os.path.realpath('example-file/sign-mnist/sign_mnist_train.csv'))
 dir_path = '/home/hanlinn/00.projects/tensorflow-prepare/example-file/energy/PJME_hourly.csv'
 
 

@@ -13,6 +13,9 @@ import pandas as pd
 import seaborn as sns
 import tensorflow as tf
 
+
+# Import Data Main data from keggle and tensorflow dataset
+# import data by pointing exact location or os.path.dirname(os.path.realpath('example-file/sign-mnist/sign_mnist_train.csv'))
 data_1_path = "/home/hanlinn/00.projects/tensorflow-prepare/example-file/scarasm/Sarcasm_Headlines_Dataset_v2.json"
 df = pd.read_json(data_1_path, lines=True)
 
